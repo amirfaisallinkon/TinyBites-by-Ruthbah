@@ -28,3 +28,14 @@
             behavior: "smooth"
         });
     });
+function sendToWhatsApp() {
+    let name = document.querySelector('input[placeholder="Your name"]').value;
+    let location = document.querySelector('input[placeholder="Your location"]').value;
+    let phone = document.querySelector('input[placeholder="Your phone number"]').value;
+    let cake = document.querySelector('input[placeholder="Cake name and Amount"]').value;
+
+    let msg = `Name: ${name}%0ALocation: ${location}%0APhone: ${phone}%0ACake: ${cake}`;
+    let phoneNumber = "8801738205144";
+
+    window.open(`https://wa.me/${phoneNumber}?text=${msg}`, "_blank");
+}
