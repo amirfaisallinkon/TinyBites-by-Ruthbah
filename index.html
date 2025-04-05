@@ -54,14 +54,14 @@
         <img src="menu.png" alt="">
     </div>
     <div class="contact" id="contact">
-        <div class="contact-form">
-            <h1>Place Your Order</h1>
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your location">
-            <input type="number" placeholder="Your phone number">
-            <input class="msg" type="text" placeholder="Cake name and Amount">
-            <p class="btn">Order Now</p>
-        </div>
+        <form class="contact-form" action="https://formspree.io/f/xanelwba" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="text" name="location" placeholder="Your location" required>
+            <input type="number" name="phone" placeholder="Your phone number" required>
+            <input class="msg" type="text" name="cake" placeholder="Cake name and amount" required>
+            <button type="submit">Order Now</button>
+          </form>
+          
         <div class="contact-details">
             <div class="brand">
                 <img class="brandimg" src="ChatGPT_Image_Apr_6__2025__03_24_48_AM-removebg-preview.png" alt="">
