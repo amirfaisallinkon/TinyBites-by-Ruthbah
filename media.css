@@ -154,7 +154,7 @@
 .contact-form .msg{
     height: 50px;
 }
-.contact-form p{
+.contact-form button{
     padding: 10px;
     margin: 5px 0;
     border: .1px solid transparent;
@@ -172,7 +172,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-  .contact-form p:hover {
+  .contact-form button:hover {
     background-color: #ba6c51;
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(186, 108, 81, 0.35);
